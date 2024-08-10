@@ -1,0 +1,20 @@
+{
+  "name": "sis-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass ./src/sass/style.sass ./dist/style.css",
+    "build-tsx": "tsc",
+    "boot": "npm run sass && npm run build-tsx && vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "react": "^18.3.1",
+    "sass": "^1.77.8",
+    "ts": "^0.2.2",
+    "vite": "^5.4.0"
+  }
+}
