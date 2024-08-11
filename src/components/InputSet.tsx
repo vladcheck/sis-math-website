@@ -1,12 +1,12 @@
-import { ReactElement } from "react";
+import { ReactNode } from "react";
 
-interface Probs {
-  classes: string[];
-  children: ReactElement[];
+interface Props {
+  classes: string;
+  children: ReactNode;
 }
 
-const InputSet = ({ classes, children }: Probs) => {
-  return <div className={`input-set, ${classes}`}>{children}</div>;
+const InputSet = ({ classes, children }: Props) => {
+  return <div className={"input-set, " + classes}>{children}</div>;
 };
 
 export default InputSet;
