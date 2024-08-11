@@ -11,17 +11,25 @@ body
 	width: 100vw
 	height: 100vh
 
+input, select
+	min-width: 4rem
+
 .horizontal
 	width: 100%
 	display: flex
 	justify-content: space-between
 	align-items: center
+	gap: 2rem
 
 .menu
 	display: flex
 	flex-direction: column
-	gap: 0.5rem
-	width: clamp(300px,40vw,600px)
+	width: clamp(300px,60vw,600px)
 	padding: 1rem
 	background-color: rgb(233, 233, 233)
 	box-shadow: 1px 3px 3px rgb(200, 200, 200)
+	h1
+		text-align: center
+
+	.input-set
+		margin: 0.3rem 0
