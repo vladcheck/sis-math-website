@@ -1,12 +1,16 @@
 import { ReactNode } from "react";
 
 interface Props {
-  classes: string;
   children: ReactNode;
+  vertical?: boolean;
 }
 
-const InputSet = ({ classes, children }: Props) => {
-  return <div className={"input-set, " + classes}>{children}</div>;
+const InputSet = ({ vertical, children }: Props) => {
+  return (
+    <div className={`input-set ${vertical ? "vertical" : "horizontal"}`}>
+      {children}
+    </div>
+  );
 };
 
 export default InputSet;
