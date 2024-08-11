@@ -12,10 +12,7 @@ body
 	height: 100vh
 
 input, select
-	width: 4rem
-
-	&.fraction
-		width: 2rem
+	min-width: 4rem
 
 .input-set
 	padding: 0 1rem
@@ -27,6 +24,14 @@ input, select
 	&.wide
 		justify-content: space-between
 
+.fraction
+	input
+		max-width: 1rem
+	&.mixed
+		display: flex
+		align-items: center
+		justify-content: center
+		gap: 0.5rem
 
 .menu
 	display: flex

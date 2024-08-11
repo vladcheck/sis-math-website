@@ -14,10 +14,7 @@ body {
 }
 
 input, select {
-  width: 4rem;
-}
-input.fraction, select.fraction {
-  width: 2rem;
+  min-width: 4rem;
 }
 
 .input-set {
@@ -30,6 +27,16 @@ input.fraction, select.fraction {
 }
 .input-set.wide {
   justify-content: space-between;
+}
+
+.fraction input {
+  max-width: 1rem;
+}
+.fraction.mixed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 .menu {

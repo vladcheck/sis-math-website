@@ -6,9 +6,9 @@
 const FractionInput = () => {
   return (
     <div className="vertical fraction">
-      <input type="number" name="enumenator" id="enumenator" />
+      <input type="text" name="enumenator" id="enumenator" />
       <hr />
-      <input type="number" name="dinominator" id="dinominator" />
+      <input type="text" name="dinominator" id="dinominator" />
     </div>
   );
 };
