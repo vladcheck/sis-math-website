@@ -7,7 +7,7 @@ export default function App() {
     <main className="menu">
       <h1>Настройки</h1>
       <hr />
-      <InputSet>
+      <InputSet classes={["wide"]}>
         <label htmlFor="topic">Тема</label>
         <InputSelect name="topic" id="topic">
           <option value="1">1</option>
@@ -15,7 +15,7 @@ export default function App() {
           <option value="3">3</option>
         </InputSelect>
       </InputSet>
-      <InputSet>
+      <InputSet classes={["wide"]}>
         <label htmlFor="amountOfProblems">Количество заданий</label>
         <NumberInput
           min={1}
@@ -25,7 +25,7 @@ export default function App() {
           id="amountOfProblems"
         />
       </InputSet>
-      <InputSet>
+      <InputSet classes={["wide"]}>
         <label htmlFor="highestNumber">
           Самое большое возможное число в задании
         </label>

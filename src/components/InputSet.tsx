@@ -2,12 +2,12 @@ import { ReactNode } from "react";
 
 interface Props {
   children: ReactNode;
-  vertical?: boolean;
+  classes?: string[];
 }
 
-const InputSet = ({ vertical, children }: Props) => {
+const InputSet = ({ classes, children }: Props) => {
   return (
-    <div className={`input-set ${vertical ? "vertical" : "horizontal"}`}>
+    <div className={classes ? "input-set " + classes.join(" ") : "input-set"}>
       {children}
     </div>
   );

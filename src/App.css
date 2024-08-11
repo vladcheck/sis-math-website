@@ -14,15 +14,22 @@ body {
 }
 
 input, select {
-  min-width: 4rem;
+  width: 4rem;
+}
+input.fraction, select.fraction {
+  width: 2rem;
 }
 
-.horizontal {
+.input-set {
+  padding: 0 1rem;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+.input-set.wide {
+  justify-content: space-between;
 }
 
 .menu {
